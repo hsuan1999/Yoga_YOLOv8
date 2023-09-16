@@ -1,0 +1,8 @@
+opencv-python
+torch
+streamlit
+pydantic
+ultralytics
+numpy
+
+opencv-contrib-python
