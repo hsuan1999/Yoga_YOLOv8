@@ -2,8 +2,8 @@ import cv2
 import streamlit as st
 import numpy as np
 
-from src.detection_keypoint import DetectKeypoint
-from src.classification_keypoint import KeypointClassification
+from My_src.detection_keypoint import DetectKeypoint
+from My_src.classification_keypoint import KeypointClassification
 
 # Streamlit設定
 st.set_page_config(
@@ -22,7 +22,7 @@ new_height = 621  # 新的高度
 # 初始化關鍵點檢測和分類模型
 detection_keypoint = DetectKeypoint()
 classification_keypoint = KeypointClassification(
-    './models/pose_classification.pth'
+    './My_models/My_pose_classification.pt'
 )
 
 # 創建一個用於顯示攝像頭畫面的Streamlit元素
